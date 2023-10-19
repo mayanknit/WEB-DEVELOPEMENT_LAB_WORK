@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .frame-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .frame {
+            width: calc(20% - 20px);
+            min-height: 250px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: #333; /* Text color changed to dark gray */
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform-origin: center bottom;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .frame:nth-child(2n) {
+            background: linear-gradient(to bottom, #e74c3c, #c0392b);
+        }
+
+        .frame:nth-child(3n) {
+            background: linear-gradient(to bottom, #2ecc71, #27ae60);
+        }
+
+        .frame:nth-child(4n) {
+            background: linear-gradient(to bottom, #f1c40f, #d4ac0d);
+        }
+
+        .frame:nth-child(5n) {
+            background: linear-gradient(to bottom, #9b59b6, #8e44ad);
+        }
+
+        .frame h2 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .frame p {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .frame:hover p {
+            opacity: 1;
+        }
+    </style>
+    <title>Colorful Frames without White Text</title>
+</head>
+<body>
+    <div class="frame-container">
+        <div class="frame">
+            <h2>Frame 1</h2>
+            <p>This frame features a stunning gradient background and smooth animations. Click below to learn more.</p>
+            <a href="#" class="frame-button">Learn More</a>
+        </div>
+        <div class="frame">
+            <h2>Frame 2</h2>
+            <p>Hover over to reveal more details about this amazing frame. Click below to explore.</p>
+            <a href="#" class="frame-button">Explore</a>
+        </div>
+        <div class="frame">
+            <h2>Frame 3</h2>
+            <p>Each frame has a unique gradient background and a sleek design. Click below to see more.</p>
+            <a href="#" class="frame-button">See More</a>
+        </div>
+        <div class="frame">
+            <h2>Frame 4</h2>
+            <p>Impress your visitors with these visually appealing frames. Click below to get impressed.</p>
+            <a href="#" class="frame-button">Get Impressed</a>
+        </div>
+        <div class="frame">
+            <h2>Frame 5</h2>
+            <p>These frames are not only colorful but also interactive. Click below to interact.</p>
+            <a href="#" class="frame-button">Interact</a>
+        </div>
+    </div>
+</body>
+</html>
